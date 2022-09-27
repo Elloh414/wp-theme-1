@@ -1,0 +1,90 @@
+header{
+    background: #111;
+    width: 100%;
+    height: 100px;
+}
+
+/* styling the page content elements, pushing them downwards and center */
+.page-wrap{
+    padding: 2rem 0 ;
+}
+
+/* styling the header elements (the navigation links in the top bar) */
+header .top-bar{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+    
+}
+
+header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header .top-bar li a{
+    padding:.25rem 1rem;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+header .top-bar li{
+    position: relative;
+}
+
+/* To avoid the first navigation link to be padded to the left */
+
+header .top-bar li:first-child a{
+    padding-left: 0;
+
+}
+
+header .top-bar li:last-child a{
+    padding-right: 0;
+}
+
+header .top-bar .sub-menu{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top:100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100px;
+    border-radius: 10px;
+}
+
+header .top-bar li .sub-menu a{
+    color: black;
+    padding: .25rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+header .top-bar li .sub-menu a:hover{
+    color: blue;
+}
+
+header .top-bar > .menu-item-has-children:hover >.sub-menu{
+    display: block;
+
+}
+
+header .top-bar .menu-item-has-children .sub-menu > .menu-item-has-children:hover .sub-menu{
+    display: hover;
+}
+
+
+header .top-bar .sub-menu li .sub-menu{
+    top: 0;
+    left: 100%;
+}
