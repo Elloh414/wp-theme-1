@@ -9,8 +9,8 @@
        <?php previous_posts_link(); ?>
        <?php next_posts_link(); ?>  
 
-        <!-- <?php 
-        global $wp_query;
+         <?php 
+        /*global $wp_query;
 
         $big = 999999999;
 
@@ -20,7 +20,8 @@
             'current'=>max(1, get_query_var('paged')),
             'total'=>$wp_query->max_num_pages
         ));
-        ?> -->
+        */
+        ?>  
 
     </div>
 </section>
